@@ -1,4 +1,5 @@
 # COVID
+
 ===================================================
 A small repo that provides some plots based off WHO
 and Johns Hopkins data (located in covid-19-data)
