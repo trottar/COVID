@@ -3,7 +3,7 @@
 #
 # Description:
 # ================================================================
-# Time-stamp: "2020-05-05 13:30:22 trottar"
+# Time-stamp: "2020-05-05 13:55:13 trottar"
 # ================================================================
 #
 # Author:  Richard L. Trotta III <trotta@cua.edu>
@@ -11,7 +11,12 @@
 # Copyright (c) trottar
 #
 
+cd covid-19-data/scripts/scripts/
+echo "Updating COVID-19 dataset"
+python3 ecdc.py
+
 cd src/
+echo "Plotting dataset"
 python3 plot_covid.py
 
 cd ../OUTPUTS/
