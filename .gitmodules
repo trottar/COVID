@@ -1,4 +1,4 @@
 [submodule "covid-19-data"]
 	path = covid-19-data
-	url = https://github.com/trottar/covid-19-data/tree/master
+	url = https://github.com/trottar/covid-19-data
 	branch = master	
