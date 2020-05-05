@@ -3,7 +3,7 @@
 #
 # Description:
 # ================================================================
-# Time-stamp: "2020-05-05 13:32:33 trottar"
+# Time-stamp: "2020-05-05 13:50:19 trottar"
 # ================================================================
 #
 # Author:  Richard L. Trotta III <trotta@cua.edu>
@@ -71,7 +71,7 @@ sk_hcr = 58/100
 itl_hcr = 2/100
 uk_hcr = 18/100
 
-days = np.array(range(np.int64(126)))
+days = np.array(range(np.int64(len(us_c))))
 
 # This is the function we are trying to fit to the data.
 def fit(x, a, b, c):
