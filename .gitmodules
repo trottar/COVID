@@ -1,6 +1,4 @@
-
 [submodule "covid-19-data"]
 	path = covid-19-data
-	url = git@github.com:trottar/covid-19-data.git
-[submodule "Submod"]
+	url = https://github.com/trottar/covid-19-data
 	branch = master
