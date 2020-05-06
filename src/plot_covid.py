@@ -3,7 +3,7 @@
 #
 # Description:
 # ================================================================
-# Time-stamp: "2020-05-05 13:50:19 trottar"
+# Time-stamp: "2020-05-06 01:36:23 trottar"
 # ================================================================
 #
 # Author:  Richard L. Trotta III <trotta@cua.edu>
@@ -94,12 +94,12 @@ f.savefig('../OUTPUTS/us_cd.png')
 f = plt.figure(figsize=(11.69,8.27))
 plt.style.use('default')
 
-plt.scatter(us_c, us_d, label="US data")
-plt.scatter(china_c, china_d, label="China data")
-plt.scatter(de_c, de_d, label="Germany data")
-plt.scatter(sk_c, sk_d, label="South Korea data")
+plt.scatter(us_c, us_d, label="US data #37")
+plt.scatter(china_c, china_d, label="China data #144")
+plt.scatter(de_c, de_d, label="Germany data #58")
+plt.scatter(sk_c, sk_d, label="South Korea data #2")
 plt.scatter(itl_c, itl_d, label="Italy data")
-plt.scatter(uk_c, uk_d, label="UK data")
+plt.scatter(uk_c, uk_d, label="UK data #18")
 
 # The actual curve fitting happens here
 optimizedParameters, pcov = opt.curve_fit(fit, us_c, us_d,maxfev=10000)
@@ -144,12 +144,12 @@ f.savefig('../OUTPUTS/cd_all_capita.png')
 f = plt.figure(figsize=(11.69,8.27))
 plt.style.use('default')
 
-plt.scatter((us_c*us_hcr)/us_pop, (us_d*us_hcr)/us_pop, label="US data")
-plt.scatter((china_c*china_hcr)/china_pop, (china_d*china_hcr)/china_pop, label="China data")
-plt.scatter((de_c*de_hcr)/de_pop, (de_d*de_hcr)/de_pop, label="Germany data")
-plt.scatter((sk_c*sk_hcr)/sk_pop, (sk_d*sk_hcr)/sk_pop, label="South Korea data")
-plt.scatter((itl_c*itl_hcr)/itl_pop, (itl_d*itl_hcr)/itl_pop, label="Italy data")
-plt.scatter((uk_c*uk_hcr)/uk_pop, (uk_d*uk_hcr)/uk_pop, label="UK data")
+plt.scatter((us_c*us_hcr)/us_pop, (us_d*us_hcr)/us_pop, label="US data #37")
+plt.scatter((china_c*china_hcr)/china_pop, (china_d*china_hcr)/china_pop, label="China data #144")
+plt.scatter((de_c*de_hcr)/de_pop, (de_d*de_hcr)/de_pop, label="Germany data #25")
+plt.scatter((sk_c*sk_hcr)/sk_pop, (sk_d*sk_hcr)/sk_pop, label="South Korea data #58")
+plt.scatter((itl_c*itl_hcr)/itl_pop, (itl_d*itl_hcr)/itl_pop, label="Italy data #2")
+plt.scatter((uk_c*uk_hcr)/uk_pop, (uk_d*uk_hcr)/uk_pop, label="UK data #18")
 
 # The actual curve fitting happens here
 optimizedParameters, pcov = opt.curve_fit(fit, (us_c*us_hcr)/us_pop, (us_d*us_hcr)/us_pop,maxfev=10000)
