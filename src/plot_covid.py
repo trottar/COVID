@@ -3,7 +3,7 @@
 #
 # Description:
 # ================================================================
-# Time-stamp: "2020-05-06 01:36:23 trottar"
+# Time-stamp: "2020-05-06 18:43:50 trottar"
 # ================================================================
 #
 # Author:  Richard L. Trotta III <trotta@cua.edu>
@@ -26,10 +26,12 @@ c = klt.pyPlot(None)
 # inp_f = "../covid-19-data/public/data/ecdc/full_data.csv"
 inp_case = "../covid-19-data/public/data/ecdc/total_cases.csv"
 inp_death = "../covid-19-data/public/data/ecdc/total_deaths.csv"
+inp_test = "../covid-19-data/public/data/testing/total_deaths.csv"
 
 try:
     case_data = dict(pd.read_csv(inp_case))
     death_data = dict(pd.read_csv(inp_death))
+    test_data = dict(pd.read_csv(inp_death))
 except IOError:
     print("Error: %s or %s [plz]does not appear to exist." % (inp_death,case_data))
 
